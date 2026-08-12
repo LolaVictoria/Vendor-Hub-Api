@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6afb4d92-3cf2-4dd7-b886-0d6fe6ee8630")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("VendorHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f47e6e1cf1790ab05537fc3e237c03c2298a474c")]
 [assembly: System.Reflection.AssemblyProductAttribute("VendorHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VendorHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

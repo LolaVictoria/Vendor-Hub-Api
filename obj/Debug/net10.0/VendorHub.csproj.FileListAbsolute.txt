@@ -125,3 +125,4 @@ C:\Users\ADMIN\Desktop\VendorHub\obj\Debug\net10.0\ref\VendorHub.dll
 C:\Users\ADMIN\Desktop\VendorHub\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\ADMIN\Desktop\VendorHub\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ADMIN\Desktop\VendorHub\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ADMIN\Desktop\VendorHub\obj\Debug\net10.0\VendorHub.sourcelink.json
