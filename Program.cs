@@ -40,9 +40,11 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseHttpsRedirection();
+    app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
+
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.MapControllers();
 
