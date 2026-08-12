@@ -1,8 +1,11 @@
 # VendorHub API
 
 RESTful backend API for managing vendors and their products, built with ASP.NET Core and PostgreSQL.
-## Documentation
-(https://vendor-hub-api.onrender.com/swagger/index.html) [Swagger Documentation]
+
+## API Documentation
+
+[Swagger Documentation](https://vendor-hub-api.onrender.com/swagger/index.html)
+
 ## Features
 
 - Vendor CRUD operations
