@@ -1,108 +1,35 @@
 # VendorHub API
 
-A RESTful backend API for managing vendors and their products, built with ASP.NET Core and PostgreSQL.
+RESTful backend API for managing vendors and their products, built with ASP.NET Core and PostgreSQL.
 
 ## Features
 
-* Vendor CRUD operations
-* Product CRUD operations
-* Vendor-product relationship
-* UUID-based identifiers
-* Product count tracking per vendor
-* Vendor approval status
-* Request validation with DTOs
-* Repository and service architecture
-* Global exception handling middleware
-* Entity Framework Core migrations
-* PostgreSQL database
-* Swagger API documentation
-* Unit testing with xUnit and Moq
+- Vendor CRUD operations
+- Product CRUD operations
+- Vendor-product relationships
+- Request validation
+- Global exception handling
+- Swagger API documentation
+- Unit testing
 
 ## Tech Stack
 
-| Technology            | Purpose             |
-| --------------------- | ------------------- |
-| C# / .NET 10          | Backend framework   |
-| ASP.NET Core          | REST API            |
-| Entity Framework Core | ORM                 |
-| PostgreSQL            | Database            |
-| Npgsql                | PostgreSQL provider |
-| Swagger / OpenAPI     | API documentation   |
-| xUnit                 | Testing             |
-| Moq                   | Mocking             |
+| Technology | Purpose |
+|---|---|
+| C# / .NET 10 | Backend |
+| ASP.NET Core | REST API |
+| Entity Framework Core | ORM and database migrations |
+| PostgreSQL | Database |
+| Npgsql | PostgreSQL provider |
+| Swagger / OpenAPI | API documentation |
+| xUnit / Moq | Unit testing |
 
 ## Architecture
 
-```text
-Client
-  |
-  v
-Controllers
-  |
-  v
-Services
-  |
-  v
-Repositories
-  |
-  v
-Entity Framework Core
-  |
-  v
-PostgreSQL
-```
-
-## API Endpoints
-
-http://localhost:5232/swagger/index.html
-```
-
-## Database
-
-The application uses PostgreSQL with Entity Framework Core.
-
-Main entities:
-
-```text
-Vendor
-  |
-  | 1-to-many
-  |
-Product
-```
-
-Both vendors and products use `Guid`/UUID identifiers.
-
-## Running Locally
-
-Clone the repository and restore dependencies:
-
-```bash
-dotnet restore
-```
-
-Update the PostgreSQL connection string in:
-
-```text
-appsettings.json
-```
-
-Apply migrations:
-
-```bash
-dotnet ef database update
-```
-
-Run the API:
-
-```bash
-dotnet run
-```
-
-## Testing
-
-Run the test suite with:
-
-```bash
-dotnet test
-```
+```mermaid
+flowchart TD
+    Client --> Controllers
+    Controllers --> Services
+    Services --> Repositories
+    Repositories --> EF[Entity Framework Core]
+    EF --> PostgreSQL
